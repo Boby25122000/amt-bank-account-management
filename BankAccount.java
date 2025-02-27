@@ -1,3 +1,5 @@
+// Related to account operation like balance check, deposit, withdrawal, and transaction history.
+
 import java.util.ArrayList;
 
 public class BankAccount {
