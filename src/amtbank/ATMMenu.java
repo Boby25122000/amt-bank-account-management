@@ -1,3 +1,5 @@
+package amtbank;
+
 import java.util.Scanner;
 
 public class ATMMenu {
@@ -9,7 +11,6 @@ public class ATMMenu {
         this.scanner = new Scanner(System.in);
     }
 
-    //! ----- Display menu for ATM ----- 
     public void displayMenu() {
         while (true) {
             System.out.println("\nATM Menu");

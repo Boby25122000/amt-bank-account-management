@@ -1,8 +1,10 @@
+package amtbank;
+
 import java.util.ArrayList;
 
 public class BankAccount {
     private double balance;
-    private final  int pin;
+    private final int pin;
     private final ArrayList<String> transactionHistory = new ArrayList<>();
 
     public BankAccount(double balance, int pin) {
@@ -14,12 +16,10 @@ public class BankAccount {
         return this.pin == userPin;
     }
 
-    //! ----- Check Balance ----- 
     public void checkBalance() {
         System.out.println("Your balance is: Rs. " + balance);
     }
 
-    //! ----- Deposit ----- 
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -30,7 +30,6 @@ public class BankAccount {
         }
     }
 
-    //! ----- Withdraw ----- 
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -41,7 +40,6 @@ public class BankAccount {
         }
     }
 
-    //! ----- Show Transaction History ----- 
     public void showTransactionHistory() {
         if (transactionHistory.isEmpty()) {
             System.out.println("No transactions yet.");

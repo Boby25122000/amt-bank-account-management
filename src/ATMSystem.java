@@ -1,8 +1,10 @@
+import amtbank.ATMMenu;
+import amtbank.BankAccount;
 import java.util.Scanner;
 
 public class ATMSystem {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount(10000, 4321); //! ----- Initial balance and PIN 
+        BankAccount account = new BankAccount(10000, 4321);
 
         System.out.print("Enter your PIN: ");
         Scanner scanner = new Scanner(System.in);
